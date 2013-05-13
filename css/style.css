@@ -3,7 +3,7 @@
 	margin:0;
 	list-style-type:none;
 }
-html, body{ min-width: 980px;}
+html, body{ min-width: 940px;}
 .acessibilidade {
 	width:1px;
 	height:1px;
@@ -15,10 +15,12 @@ html, body{ min-width: 980px;}
 h1, h2, h3, h4{
 	font-style: normal;
 	font-weight: normal;
-	font-family: 'exo', sans-serif;
+	color: #227a82;
+	font-family: 'orbitronb', sans-serif;
+	letter-spacing: 1px;
 }
 a, h1, h2, h3, h4, article, aside, dialog, figure, footer, header, hgroup, nav, section, blockquote, label { display: block;}
-a{ text-decoration: none; color: #919191;}
+a{ text-decoration: none; color: #122a53;}
 a:hover, a:focus{ background-position:left bottom;}
 a.ativo{ background-position:left bottom;}
 a.link{ display:inline;}
@@ -29,59 +31,122 @@ img{ border: none;}
 .left{ float: left;}
 .right{ float: right;}
 .img-left{ float: left; margin: 0 15px 10px 0;}
-
+@font-face {
+    font-family: 'orbitronm';
+    src: url('../fonts/orbitron-medium.eot');
+    src: url('../fonts/orbitron-medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/orbitron-medium.woff') format('woff'),
+         url('../fonts/orbitron-medium.ttf') format('truetype'),
+         url('../fonts/orbitron-medium.svg#orbitronm') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'orbitronb';
+    src: url('../fonts/orbitron-bold.eot');
+    src: url('../fonts/orbitron-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/orbitron-bold.woff') format('woff'),
+         url('../fonts/orbitron-bold.ttf') format('truetype'),
+         url('../fonts/orbitron-bold.svg#orbitronb') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 body{
-	color: #004f41;
+	color: #122a53;
 	font-size: 12px;
 	font-family: Verdana, Geneva, sans-serif;
-	background-color: #5f594d;
 }
 
 /*** HOME ***/
 .bg-home{
 	width: 100%;
 	display: table;
-	background: #FFF url(../img/bghome.jpg) center top no-repeat;
+	background: url(../img/bghome.jpg) center top no-repeat;
 }
 header{
-	width: 960px;
-	height: 134px;
+	width: 940px;
+	height: 174px;
 	margin: 0 auto;
 }
 header h1{
-	width: 240px;
-	height: 69px;
-	padding-top: 18px;
+	width: 200px;
+	height: 71px;
+	float: left;
+	padding: 20px 0 0 371px;
 }
 header h1 a{
-	width: 240px;
-	height: 69px;
-	background-image: url(../img/logo.jpg);
+	width: 200px;
+	height: 71px;
+	background-image: url(../img/delta-prag.jpg);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.telefone{
+	float: right;
+	color: #f2fafc;
+	font-size: 14px;
+	font-family: 'orbitronb', sans-serif;
+	padding: 7px 10px 0 0;
+	letter-spacing: 1px;
+}
+header ul{
+	width: 934px;
+	height: 18px;
+	float: left;
+	padding: 17px 0 0 6px;
+	background: url(../img/bgnav.jpg) 0 17px no-repeat;
+}
+header ul li{ float: left; padding-left: 23px;}
+header ul li a{
+	height: 16px;
+	color: #227a82;
+	font-family: 'orbitronb', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-top: 2px;
+}
+header ul li a.bt-home{ width: 99px;}
+header ul li a:hover.bt-home, header ul li a:focus.bt-home, header ul li a.ativo1{ width: 99px; color: #f6fbfc; background: url(../img/navhover.png) -29px 0 no-repeat;}
+header ul li a.bt-empr{ width: 130px;}
+header ul li a:hover.bt-empr, header ul li a:focus.bt-empr, header ul li a.ativo2{ width: 130px; color: #f6fbfc; background: url(../img/navhover.png) -151px 0 no-repeat;}
+header ul li a.bt-serv{ width: 133px;}
+header ul li a:hover.bt-serv, header ul li a:focus.bt-serv, header ul li a.ativo3{ width: 133px; color: #f6fbfc; background: url(../img/navhover.png) -304px 0 no-repeat;}
+header ul li a.bt-frot{ width: 108px;}
+header ul li a:hover.bt-frot, header ul li a:focus.bt-frot, header ul li a.ativo4{ width: 108px; color: #f6fbfc; background: url(../img/navhover.png) -460px 0 no-repeat;}
+header ul li a.bt-info{ width: 171px;}
+header ul li a:hover.bt-info, header ul li a:focus.bt-info, header ul li a.ativo5{ width: 171px; color: #f6fbfc; background: url(../img/navhover.png) -591px 0 no-repeat;}
+header ul li a.bt-cont{ width: 130px;}
+header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo6{ width: 130px; color: #f6fbfc; background: url(../img/navhover.png) -785px 0 no-repeat;}
+#content{ width: 940px; margin: 0 auto;}
+.top-left{
+	width: 455px;
+	height: 239px;
+	float: left;
+	padding: 25px 0 0 159px;
+}
+.top-left h2{
+	color: #FFF;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-bottom: 25px;
+	text-shadow: -2px 1px 0px rgba(64, 64, 64, 1);
+}
+.top-left h2 span{ font-size: 13px;}
+.top-left h3{
+	font-size: 18px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}
+.top-left p{ padding-right: 50px;}
+.slides_container{
+	width: 326px;
+	height: 264px;
+	float: right;
+	overflow: hidden;
+}
+.slides_container h2{ width: 326px; height: 264px;}
+.h2-pragas{ background: url(../img/controle-de-pragas.jpg) 0 0 no-repeat;}
+.h2-desentupidora{ background: url(../img/desentupidora.jpg) 0 0 no-repeat;}
+.h2-dedetizacao{ background: url(../img/dedetizacao.jpg) 0 0 no-repeat;}
 
 
 

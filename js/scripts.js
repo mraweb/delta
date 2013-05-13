@@ -8,24 +8,30 @@ jQuery(document).ready(function(){
     jQuery('head').append('<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />')
 });
 
-
-
-
-
-// script para colocar o iframe com wmode= transparent
-$(document).ready(function() {
-    $("iframe").each(function(){
-        var ifr_source = $(this).attr('src');
-        var wmode = "wmode=transparent";
-        if(ifr_source.indexOf('?') != -1) {
-            var getQString = ifr_source.split('?');
-            var oldString = getQString[1];
-            var newString = getQString[0];
-            $(this).attr('src',newString+'?'+wmode+'&'+oldString);
-        }
-        else $(this).attr('src',ifr_source+'?'+wmode);
+// slide home
+$(function(){
+    // Set starting slide to 1
+    var startSlide = 1;
+    // Get slide number if it exists
+    if (window.location.hash) {
+        startSlide = window.location.hash.replace('#','');
+    }
+    // Initialize Slides
+    $('#slides-home').slides({
+        preload: true,
+        preloadImage: 'img/loading.gif',
+        generatePagination: false,
+        generateNextPrev: false,
+        control: true,
+        play: 8000,
+        pause: 2500,
+        hoverPause: false,
+        start: startSlide,
+        effect: 'fade'
     });
 });
+
+
 
 // facebook
 (function(d, s, id) {
