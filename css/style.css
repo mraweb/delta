@@ -93,7 +93,7 @@ header ul{
 	height: 18px;
 	float: left;
 	padding: 17px 0 0 6px;
-	background: url(../img/bgnav.jpg) 0 17px no-repeat;
+	background: url(../img/bgnav.png) 0 17px no-repeat;
 }
 header ul li{ float: left; padding-left: 23px;}
 header ul li a{
@@ -165,14 +165,14 @@ header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo
 	float: left;
 	padding: 20px 20px 0 262px;
 }
-.frota h2{ padding-bottom: 10px;}
+.frota h2{ font-size: 18px; padding-bottom: 10px;}
 .dedetizacao{
 	width: 432px;
 	height: 143px;
 	float: left;
 	padding: 19px 0 0 0;
 }
-.dedetizacao h2{ padding-bottom: 10px;}
+.dedetizacao h2{ font-size: 18px; padding-bottom: 10px;}
 .contato{
 	width: 517px;
 	height: 123px;
@@ -237,13 +237,168 @@ header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo
 	cursor: default; background: url(../img/prev.gif) 0 0 no-repeat; opacity: 0.3;}
 
 /* EMPRESA */
+.bg-int{
+	width: 100%;
+	display: table;
+	background: #cbf0f6 url(../img/bgint.jpg) center top no-repeat;
+}
+header .logo{
+	width: 200px;
+	height: 71px;
+	float: left;
+	padding: 20px 0 0 371px;
+}
+.header-internas{ height: 211px;}
+.bg-empr{ width: 940px; background: url(../img/bgempr.jpg) right top no-repeat;}
+#content h1{ font-size: 18px; padding-bottom: 15px;}
+#content h1 span{ font-size: 14px; font-family: 'orbitronm', sans-serif;}
+.txt-menor{ width: 693px;}
+.h2-pdr{
+	height: 18px;
+	font-size: 14px;
+	padding: 0 0 10px 20px;
+}
+.icon-missao{ background: url(../img/icon-missao.jpg) 0 0 no-repeat;}
+.icon-visao{ background: url(../img/icon-visao.jpg) 0 0 no-repeat;}
+.icon-valores{ background: url(../img/icon-valores.jpg) 0 0 no-repeat;}
+.lista-arrow{ padding-bottom: 30px;}
+.lista-arrow li{
+	line-height: 18px;
+	padding-left: 10px;
+	background: url(../img/seta.png) 0 4px no-repeat;
+}
+.box-servicos{
+	width: 250px;
+	height: 135px;
+	float: left;
+	margin-bottom: 40px;
+	padding: 50px 0 0 212px;
+	cursor: pointer;
+	background: url(../img/bgboxservicos.jpg) 0 0 no-repeat;
+}
+.box-servicos h3{ font-size: 12px; padding-bottom: 10px;}
+.box-servicos:hover a, .box-servicos:focus a{ text-decoration: underline;}
+.box-frota{
+	width: 225px;
+	height: 135px;
+	float: left;
+	margin-bottom: 40px;
+	padding: 50px 0 0 253px;
+	cursor: pointer;
+	background: url(../img/bgboxfrota.jpg) 0 0 no-repeat;
+}
+.box-frota h3{ font-size: 12px; padding-bottom: 10px;}
+.box-frota:hover a, .box-frota:focus a{ text-decoration: underline;}
+
+/* SERVICOS */
+.bottom-serv{
+	width: 940px;
+	height: 300px;
+	float: left;
+	background: url(../img/bgserv.jpg) 0 0 no-repeat;
+}
+.box-desentupidora{
+	width: 227px;
+	height: 134px;
+	float: left;
+	margin: 49px 0 0 179px;
+	cursor: pointer;
+}
+.box-desentupidora h2{
+	text-transform: none;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+.box-desentupidora:hover .confira{ color: #0f4247;}
+.box-desentupidora a:hover{ text-decoration: none;}
+.box-dedetizacao{
+	width: 223px;
+	height: 134px;
+	float: right;
+	margin: 49px 71px 0 0;
+	cursor: pointer;
+}
+.box-dedetizacao h2{
+	text-transform: none;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+.box-dedetizacao:hover .confira{ color: #0f4247;}
+.box-dedetizacao a:hover{ text-decoration: none;}
+.confira{
+	width: 200px;
+	height: 23px;
+	padding: 4px 0 0 20px;
+	color: #227a82;
+	font-size: 17px;
+	font-family: 'orbitronb', sans-serif;
+	background: url(../img/btconf.jpg) 0 0 no-repeat;
+}
+
+/* SERVICOS INTERNAS */
 
 
 
 
 
 
+/* FROTA */
+.bg-frota{ width: 940px; background: url(../img/bgfrota.jpg) right top no-repeat;}
+.txt-menor1{ width: 660px;}
+.fotos{
+	width: 940px;
+	float: left;
+	padding-bottom: 50px;
+}
+.fotos li{ float: left; padding: 0 22px 22px 0;}
+#content .sem-pdg-right{ padding-right: 0;}
+.pdg-bottom{ padding-bottom: 495px;}
 
+/* CONTATO */
+
+
+
+
+#mapaTeste{ display: none;}
+.mapaContent{
+	width: 550px;
+  	height: 320px;
+  	display:block;
+  	position: absolute;
+  	left: 30%;
+  	top: 10%;
+  	z-index:999999;
+}
+.window{
+  	width: 550px;
+  	height: 320px;
+  	overflow: hidden;
+  	z-index: 99;
+  	background-color: #FFF;
+  	border: 6px solid #999;
+  	padding-top: 30px;
+
+}
+.close{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: -25px;
+  	top: -20px;
+	background: url(../img/fechar.png) 0 0 no-repeat;
+	z-index: 999;
+	cursor: pointer;
+}
+#mask{
+	width: 100%;
+	height: 950px;
+	background-color: #000;
+	z-index: 9;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.8;
+}
 
 /* FOOTER */
 .bg-rodape{
@@ -251,6 +406,12 @@ header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo
 	height: 167px;
 	padding-top: 34px;
 	background: url(../img/bgroda.jpg) center top no-repeat;
+}
+.bg-rodape-int{
+	width: 100%;
+	height: 167px;
+	padding-top: 34px;
+	background: url(../img/bgrodaint.jpg) center top no-repeat;
 }
 footer{ width: 940px; margin: 0 auto;}
 .logo-footer{

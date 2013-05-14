@@ -8,6 +8,18 @@ jQuery(document).ready(function(){
     jQuery('head').append('<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />')
 });
 
+// Link div
+$(document).ready(function(){                  
+    $(".box-servicos, .box-frota, .box-desentupidora, .box-dedetizacao").click(function(){
+        window.location=$(this).find("a").attr("href");return false;
+    });
+});
+
+// lightbox
+$(document).ready(function(){
+    $(".fotos a").colorbox({rel:'fotos a'});
+});
+
 // slide home
 $(function(){
     // Set starting slide to 1
@@ -38,6 +50,8 @@ jQuery(document).ready(function() {
     });
 });
 
+// a cada 6 elementos adiciona a class sem-pdg-right
+$(".fotos li:nth-child(6n)").addClass("sem-pdg-right");
 
 // facebook
 (function(d, s, id) {
