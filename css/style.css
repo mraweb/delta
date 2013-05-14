@@ -18,12 +18,13 @@ h1, h2, h3, h4{
 	color: #227a82;
 	font-family: 'orbitronb', sans-serif;
 	letter-spacing: 1px;
+	text-transform: uppercase;
 }
 a, h1, h2, h3, h4, article, aside, dialog, figure, footer, header, hgroup, nav, section, blockquote, label { display: block;}
 a{ text-decoration: none; color: #122a53;}
 a:hover, a:focus{ background-position:left bottom;}
 a.ativo{ background-position:left bottom;}
-a.link{ display:inline;}
+a.link{ display:inline; color: #227a82;}
 a:hover.link, a:focus.link{ text-decoration:underline; }
 .hidetxt{ text-indent:-99999px; overflow:hidden;}
 p{ padding-bottom: 20px; line-height: 18px;}
@@ -126,16 +127,11 @@ header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo
 .top-left h2{
 	color: #FFF;
 	font-size: 16px;
-	text-transform: uppercase;
 	padding-bottom: 25px;
 	text-shadow: -2px 1px 0px rgba(64, 64, 64, 1);
 }
 .top-left h2 span{ font-size: 13px;}
-.top-left h3{
-	font-size: 18px;
-	text-transform: uppercase;
-	padding-bottom: 10px;
-}
+.top-left h3{ font-size: 18px; padding-bottom: 10px;}
 .top-left p{ padding-right: 50px;}
 .slides_container{
 	width: 326px;
@@ -147,27 +143,100 @@ header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo
 .h2-pragas{ background: url(../img/controle-de-pragas.jpg) 0 0 no-repeat;}
 .h2-desentupidora{ background: url(../img/desentupidora.jpg) 0 0 no-repeat;}
 .h2-dedetizacao{ background: url(../img/dedetizacao.jpg) 0 0 no-repeat;}
+.servicos{
+	width: 235px;
+	height: 126px;
+	float: left;
+	padding: 0 0 0 10px;
+}
+.servicos h2{ font-size: 18px; padding-bottom: 10px;}
+.servicos h2 a{ color: #edf8fa; text-shadow: -2px 1px 0px rgba(64, 64, 64, 1);}
+.servicos p{ color: #edf8fa;}
+.desentupidora{
+	width: 615px;
+	height: 116px;
+	float: left;
+	padding: 10px 0 0 80px;
+}
+.desentupidora h2{ font-size: 18px; padding-bottom: 10px;}
+.frota{
+	width: 226px;
+	height: 142px;
+	float: left;
+	padding: 20px 20px 0 262px;
+}
+.frota h2{ padding-bottom: 10px;}
+.dedetizacao{
+	width: 432px;
+	height: 143px;
+	float: left;
+	padding: 19px 0 0 0;
+}
+.dedetizacao h2{ padding-bottom: 10px;}
+.contato{
+	width: 517px;
+	height: 123px;
+	float: left;
+	padding: 0 0 0 0;
+}
+.contato h2{ padding: 0 0 10px 60px; font-size: 14px;}
+.contato p{ padding-left: 133px;}
+.parceiros{
+	width: 376px;
+	height: 123px;
+	float: right;
+}
+.parceiros h2{
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	text-align: center;
+}
+.jcarousel-skin-parceiros .jcarousel-container {
+	width: 307px;
+	float: left;
+    padding-left: 69px;
+}
+.jcarousel-skin-parceiros .jcarousel-clip { width: 307px; overflow: hidden;}
+.jcarousel-skin-parceiros .jcarousel-clip-horizontal  { width: 260px;}
+.jcarousel-skin-parceiros .jcarousel-item {
+    width: 102px;
+    height: 122px;
+    float: left;
+    margin-right: 30px;
+}
+.jcarousel-skin-parceiros .jcarousel-prev-horizontal {
+    width: 37px;
+    height: 53px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    background-image: url(../img/prev.gif);
+}
+.jcarousel-skin-parceiros .jcarousel-next-horizontal {
+    width: 37px;
+    height: 53px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    background-image: url(../img/next.gif);
+}
+.jcarousel-skin-parceiros .jcarousel-prev-horizontal:hover, 
+.jcarousel-skin-parceiros .jcarousel-next-horizontal:hover {
+	background-position:left bottom; opacity: 0.3;}
+.jcarousel-skin-parceiros .jcarousel-next-disabled-horizontal,
+.jcarousel-skin-parceiros .jcarousel-next-disabled-horizontal:hover,
+.jcarousel-skin-parceiros .jcarousel-next-disabled-horizontal:focus,
+.jcarousel-skin-parceiros .jcarousel-next-disabled-horizontal:active {
+	cursor: default; background: url(../img/next.gif) 0 0 no-repeat; opacity: 0.3;}
+.jcarousel-skin-parceiros .jcarousel-prev-disabled-horizontal,
+.jcarousel-skin-parceiros .jcarousel-prev-disabled-horizontal:hover,
+.jcarousel-skin-parceiros .jcarousel-prev-disabled-horizontal:focus,
+.jcarousel-skin-parceiros .jcarousel-prev-disabled-horizontal:active {
+	cursor: default; background: url(../img/prev.gif) 0 0 no-repeat; opacity: 0.3;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* EMPRESA */
 
 
 
@@ -177,10 +246,58 @@ header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo
 
 
 /* FOOTER */
+.bg-rodape{
+	width: 100%;
+	height: 167px;
+	padding-top: 34px;
+	background: url(../img/bgroda.jpg) center top no-repeat;
+}
+footer{ width: 940px; margin: 0 auto;}
+.logo-footer{
+	float: left;
+	color: #155661;
+	font-size: 18px;
+	font-family: 'orbitronb', sans-serif;
+	text-transform: uppercase;
+}
+.logo-footer span{ font-size: 15px; font-family: 'orbitronm', sans-serif;}
+.bt-orca a{
+	float: right;
+	color: #b4e2e9;
+	font-size: 22px;
+	font-family: 'orbitronb', sans-serif;
+	text-decoration: underline;
+}
+footer nav ul{
+	width: 940px;
+	float: left;
+	padding: 28px 0 57px 0;
+}
+footer nav ul li{
+	float: left;
+	padding: 0 55px 0 54px;
+	background: url(../img/ballwhite.png) right 5px no-repeat;
+}
+.sem-pdg-left{ padding-left: 0;}
+footer .sem-pdg-right{ padding-right: 0; background: none;}
+footer nav ul li a{
+	color: #f6fbfc;
+	font-family: 'orbitronb', sans-serif;
+	text-transform: uppercase;
+}
+footer nav ul li a:hover{ text-decoration: underline;}
+address{
+	width: 825px;
+	float: left;
+	font-style: normal;
+	color: #001e21;
+}
+address a{ display: inline; color: #001e21;}
 footer .selo{
 	width: 91px;
 	height: 15px;
 	padding: 0;
+	float: right;
 }
 footer .selo a{
 	width: 91px;

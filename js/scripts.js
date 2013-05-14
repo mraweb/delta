@@ -31,6 +31,12 @@ $(function(){
     });
 });
 
+// carroussel
+jQuery(document).ready(function() {
+    jQuery(".carousel").jcarousel({
+        scroll:1
+    });
+});
 
 
 // facebook
