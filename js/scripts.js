@@ -15,18 +15,6 @@ $(document).ready(function(){
     });
 });
 
-// carroussel
-jQuery(document).ready(function() {
-    jQuery(".carousel").jcarousel({
-        scroll:1
-    });
-});
-
-// lightbox
-$(document).ready(function(){
-    $(".fotos a").colorbox({rel:'fotos a'});
-});
-
 // slide home
 $(function(){
     // Set starting slide to 1
