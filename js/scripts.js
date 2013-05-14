@@ -15,6 +15,13 @@ $(document).ready(function(){
     });
 });
 
+// carroussel
+jQuery(document).ready(function() {
+    jQuery(".carousel").jcarousel({
+        scroll:1
+    });
+});
+
 // lightbox
 $(document).ready(function(){
     $(".fotos a").colorbox({rel:'fotos a'});
@@ -40,13 +47,6 @@ $(function(){
         hoverPause: false,
         start: startSlide,
         effect: 'fade'
-    });
-});
-
-// carroussel
-jQuery(document).ready(function() {
-    jQuery(".carousel").jcarousel({
-        scroll:1
     });
 });
 
