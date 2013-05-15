@@ -19,7 +19,7 @@
                 <li><a href="servicos.php" title="Serviços" class="bt-serv <?php if($url == "servicos.php"){echo 'ativo3';} ?>">Serviços</a></li>
                 <li><a href="frota.php" title="Frota" class="bt-frot <?php if($url == "frota.php"){echo 'ativo4';} ?>">Frota</a></li>
                 <li><a href="informativo.php" title="Informativo" class="bt-info <?php if($url == "informativo.php"){echo 'ativo5';} ?>">Informativo</a></li>
-                <li><a href="contato.php" title="Contato" class="bt-cont <?php if($url == "contato.php"){echo 'ativo6';} ?>">Contato</a></li>
+                <li><a href="contato.php" title="Contato" class="bt-cont <?php if($url == "contato.php" or $url == "resposta-contato.php"){echo 'ativo6';} ?>">Contato</a></li>
             </ul>
         </nav>
     </header><!-- FINAL HEADER -->

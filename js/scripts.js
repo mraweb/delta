@@ -8,6 +8,10 @@ jQuery(document).ready(function(){
     jQuery('head').append('<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />')
 });
 
+$(".mapa a").click(function(e){
+    e.preventDefault();
+})
+
 // Link div
 $(document).ready(function(){                  
     $(".box-servicos, .box-frota, .box-desentupidora, .box-dedetizacao").click(function(){

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-<title>Fale Conosco | Delta Prag - Desentupidora e Dedetizadora</title>
+<title>Contato Enviado | Delta Prag - Desentupidora e Dedetizadora</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/validationEngine.jquery.css">
 <!--[if ie]>
@@ -22,34 +22,9 @@
 
             <p>Caso reste alguma dúvida ou tenha um pedido de solicitação quanto às soluções que a Delta Prag coloca à sua disposição entre em contato agora mesmo! Basta preencher o formulário de contato e aguardar o breve retorno da equipe de atendimento Delta Prag.</p>
 
-            <form action="resposta-contato.php" method="post" id="formID">
-                <ul class="formulario">
-                    <li>
-                        <label for="nome">Nome*:</label>
-                        <input type="text" name="nome" id="nome" class="validate[required]" />
-                    </li>
-
-                    <li>
-                        <label for="mail">E-mail*:</label>
-                        <input type="text" name="mail" id="mail" class="validate[required,custom[email]]" />
-                    </li>
-
-                    <li>
-                        <label for="tel">Telefone*:</label>
-                        <input type="text" name="tel" id="tel" class="validate[required,custom[phone]]" />
-                    </li>
-
-                    <li>
-                        <label for="msg">Mensagem:</label>
-                        <textarea rows="5" cols="50" name="msg" id="msg"></textarea>
-                    </li>
-
-                    <li>
-                        <span>* Dados Obrigatórios</span>
-                        <input type="image" src="img/btenviar.jpg" name="Enviar" alt="Enviar" class="bt-enviar" />
-                    </li>
-                </ul>
-            </form>
+            <div class="formulario">
+                <p class="enviado">Mensagem Enviada com Sucesso!</p>
+            </div>
 
             <div class="final-cont">
                 <address>
@@ -86,9 +61,6 @@
 </div>
 
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.validationEngine.js"></script>
-<script type="text/javascript" src="js/jquery.validationEngine-pt.js"></script>
-<script type="text/javascript" src="js/jquery.mask.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="js/mapa.js"></script>
 <script type="text/javascript" src="js/validacao.js"></script>

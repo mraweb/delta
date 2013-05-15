@@ -1,6 +1,6 @@
 /****** MAPS *****/
 function initialize() {
-	var myLatlng = new google.maps.LatLng(-23.705481,-46.60964);
+	var myLatlng = new google.maps.LatLng(-23.686624,-46.711526);
 
 	var myOptions = {
 		zoom: 16,
@@ -11,7 +11,7 @@ function initialize() {
 		var map = new google.maps.Map(document.getElementById("mapa"), myOptions);
 		
 		var infowindow = new google.maps.InfoWindow(
-			{ content: 'Rua Álvares Cabral, 1530 – Serraria<br />Diadema / SP',
+			{ content: 'Delta Prag<br />Rua Doutor Nelson Pizzotti Mendes, 32<br />São Paulo / SP',
 				size: new google.maps.Size(),
 				position: myLatlng
 			});
