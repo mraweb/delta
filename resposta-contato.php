@@ -1,3 +1,32 @@
+<?php
+require_once('phpmailer/class.phpmailer.php');
+    $phpmail = new PHPMailer();
+    $phpmail->IsSMTP(); // envia por SMTP
+    $phpmail->Host = "smtp.dominio.com.br"; // SMTP servers
+    $phpmail->SMTPAuth = true; // Caso o servidor SMTP precise de autenticação
+    $phpmail->Username = "envia@dominio.com.br"; // SMTP username
+    $phpmail->Password = "qweasd"; // SMTP password
+    $phpmail->Port = 587;
+        
+    $phpmail->IsHTML(true);
+    //$phpmail->From = $_POST["miraEmail"];
+    $phpmail->From = "cliente@dominio.com.br";
+    $phpmail->FromName = $_POST["nome"];
+    
+    $phpmail->AddAddress('contato@dominio.com.br', 'Mirabella Noivas');
+    $phpmail->AddReplyTo($_POST["email"], $_POST["nome"]);
+    
+    $phpmail->Subject = "Dados enviados pelo Contato do site Mirabella Noivas";
+    
+    $phpmail->Body .= "Nome: ". $_POST["nome"]."<br />";
+    $phpmail->Body .= "E-mail: ". $_POST["email"]."<br />";
+    $phpmail->Body .= "Telefone: ". $_REQUEST["tel"]."<br />";  
+    $phpmail->Body .= "Mensagem: ".nl2br($_POST["msg"])."<br />";
+
+    if ( !strpos($_SERVER['HTTP_USER_AGENT'],"Googlebot") && isset($_POST['nome']) && $_POST['nome'] !== ''){
+        $send = $phpmail->Send();
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

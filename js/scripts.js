@@ -19,6 +19,29 @@ $(document).ready(function(){
     });
 });
 
+// navegacao entre abas
+$(document).ready(function() {
+    $(".tab_content").hide(); 
+        if(location.hash != "") {
+        var target = "#"+location.hash.split("#")[1]; // need semicolon at end of line
+        $(location.hash).show(); //Show first tab content
+        $("ul.tabs li:has(a[href="+target+"])").addClass("active").show();
+        rotateTabs=false;
+        } else {
+        $("ul.tabs li:eq(0)").addClass("active").show(); //Activate first tab
+        $(".tab_content:eq(0)").show(); //Show first tab content
+    }
+
+    $("ul.tabs li").click(function() {
+        $("ul.tabs li").removeClass("active"); 
+        $(this).addClass("active"); 
+        $(".tab_content").hide(); 
+        var activeTab = $(this).find("a").attr("href"); 
+        $(activeTab).fadeIn();
+        return false
+    });
+});
+
 // slide home
 $(function(){
     // Set starting slide to 1
@@ -43,7 +66,7 @@ $(function(){
 });
 
 // a cada 6 elementos adiciona a class sem-pdg-right
-$(".fotos li:nth-child(6n)").addClass("sem-pdg-right");
+$(".fotos li:nth-child(6n), .nav-serv li:nth-child(6n)").addClass("sem-pdg-right");
 
 // facebook
 (function(d, s, id) {

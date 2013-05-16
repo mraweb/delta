@@ -33,7 +33,7 @@
 
             <div class="bottom-serv">
                 <section class="box-desentupidora">
-                    <h2><a href="dsesentupidora.php" title="Desentupidora" class="link">Desentupidora</a></h2>
+                    <h2><a href="desentupidora.php" title="Desentupidora" class="link">Desentupidora</a></h2>
 
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
@@ -41,7 +41,7 @@
                 </section><!-- FINAL BOX DESENTUPIDORA -->
 
                 <section class="box-dedetizacao">
-                    <h2><a href="dedetizacao.php" title="Dedetização e Controle de Pragas" class="link">Dedetização e Controle de Pragas</a></h2>
+                    <h2><a href="dedetizacao-e-controle-de-pragas.php" title="Dedetização e Controle de Pragas" class="link">Dedetização e Controle de Pragas</a></h2>
 
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
 
