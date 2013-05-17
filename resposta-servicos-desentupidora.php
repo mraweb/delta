@@ -1,9 +1,38 @@
+<?php
+require_once('phpmailer/class.phpmailer.php');
+    $phpmail = new PHPMailer();
+    $phpmail->IsSMTP(); // envia por SMTP
+    $phpmail->Host = "smtp.deltaprag.com.br"; // SMTP servers
+    $phpmail->SMTPAuth = true; // Caso o servidor SMTP precise de autenticação
+    $phpmail->Username = "envia@deltaprag.com.br"; // SMTP username
+    $phpmail->Password = "qweasd10"; // SMTP password
+    $phpmail->Port = 587;
+        
+    $phpmail->IsHTML(true);
+    $phpmail->From = "envia@deltaprag.com.br";
+    $phpmail->FromName = $_POST["nome"];
+    
+    $phpmail->AddAddress('marcelo@ao5.com.br', 'Delta Prag');
+    $phpmail->AddReplyTo($_POST["mail"], $_POST["nome"]);
+    
+    $phpmail->Subject = "Orçamento Desentupidora - ".$_POST["nome"]."";
+    
+    $phpmail->Body .= "<strong>IP:</strong> ". $_SERVER["REMOTE_ADDR"]."<br />";
+    $phpmail->Body .= "<strong>Nome:</strong> ". $_POST["nome"]."<br />";
+    $phpmail->Body .= "<strong>E-mail:</strong> ". $_POST["mail"]."<br />";
+    $phpmail->Body .= "<strong>Telefone:</strong> ". $_REQUEST["tel"]."<br />";  
+    $phpmail->Body .= "<strong>Mensagem:</strong> ".nl2br($_POST["msg"])."<br />";
+
+    if ( !strpos($_SERVER['HTTP_USER_AGENT'],"Googlebot") && isset($_POST['nome']) && $_POST['nome'] !== ''){
+        $send = $phpmail->Send();
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8" />
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-<title>Desentupidora | Delta Prag - Desentupidora e Dedetizadora</title>
+<title>Orçamento Enviado Desentupidora | Delta Prag - Desentupidora e Dedetizadora</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/validationEngine.jquery.css">
 <!--[if ie]>
@@ -175,34 +204,7 @@
                 <h3>Solicite Atendimento 24 Horas</h3>
                 <p class="icontel">(11) 5666-9353</p>
 
-                <form action="resposta-servicos-desentupidora.php" method="post" id="formID">
-                    <ul>
-                        <li>
-                            <label for="nome">Nome*:</label>
-                            <input type="text" name="nome" id="nome" class="validate[required]" />
-                        </li>
-
-                        <li>
-                            <label for="mail">E-mail*:</label>
-                            <input type="text" name="mail" id="mail" class="validate[required,custom[email]]" />
-                        </li>
-
-                        <li>
-                            <label for="tel">Telefone*:</label>
-                            <input type="text" name="tel" id="tel" class="validate[required,custom[phone]]" />
-                        </li>
-
-                        <li>
-                            <label for="msg">Mensagem:</label>
-                            <textarea rows="5" cols="50" name="msg" id="msg"></textarea>
-                        </li>
-
-                        <li>
-                            <span>* Dados Obrigatórios</span>
-                            <input type="image" src="img/btenviar.jpg" name="Enviar" alt="Enviar" class="bt-enviar" />
-                        </li>
-                    </ul>
-                </form>
+                <p class="resposta"><strong>Obrigado <?php echo $_POST["nome"]; ?>, seu orçamento foi enviado com sucesso!</strong></p>
             </section><!-- FINAL FORM SERV -->
         </section><!-- FINAL CONTENT -->
     </div>  

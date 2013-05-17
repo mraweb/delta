@@ -95,7 +95,11 @@ header ul{
 	padding: 17px 0 0 6px;
 	background: url(../img/bgnav.png) 0 17px no-repeat;
 }
-header ul li{ float: left; padding-left: 23px;}
+header ul li{
+	float: left;
+	padding-left: 23px;
+	position: relative;
+}
 header ul li a{
 	height: 16px;
 	color: #227a82;
@@ -110,13 +114,36 @@ header ul li a:hover.bt-home, header ul li a:focus.bt-home, header ul li a.ativo
 header ul li a.bt-empr{ width: 130px;}
 header ul li a:hover.bt-empr, header ul li a:focus.bt-empr, header ul li a.ativo2{ width: 130px; color: #f6fbfc; background: url(../img/navhover.png) -151px 0 no-repeat;}
 header ul li a.bt-serv{ width: 133px;}
-header ul li a:hover.bt-serv, header ul li a:focus.bt-serv, header ul li a.ativo3{ width: 133px; color: #f6fbfc; background: url(../img/navhover.png) -304px 0 no-repeat;}
+header ul li a:hover.bt-serv, header ul li a:focus.bt-serv, header ul li a.ativo3, header ul li a.current-menu{ width: 133px; color: #f6fbfc; background: url(../img/navhover.png) -304px 0 no-repeat;}
 header ul li a.bt-frot{ width: 108px;}
 header ul li a:hover.bt-frot, header ul li a:focus.bt-frot, header ul li a.ativo4{ width: 108px; color: #f6fbfc; background: url(../img/navhover.png) -460px 0 no-repeat;}
 header ul li a.bt-info{ width: 171px;}
 header ul li a:hover.bt-info, header ul li a:focus.bt-info, header ul li a.ativo5{ width: 171px; color: #f6fbfc; background: url(../img/navhover.png) -591px 0 no-repeat;}
 header ul li a.bt-cont{ width: 130px;}
 header ul li a:hover.bt-cont, header ul li a:focus.bt-cont, header ul li a.ativo6{ width: 130px; color: #f6fbfc; background: url(../img/navhover.png) -785px 0 no-repeat;}
+header ul li ul{
+	width: 209px;
+	height: 68px;
+	display: none;
+	position: absolute;
+	left: -18px;
+	top: 18px;
+	padding: 10px 0 0 0;
+	background: url(../img/submenu.jpg) 0 0 no-repeat;
+}
+header ul li ul li{
+	width: 174px;
+	padding: 0 15px 5px 20px;
+	background: url(../img/seta.jpg) 10px center no-repeat;
+}
+header ul li ul li a{
+	width: 194px;
+	text-align: left;
+	color: #cbecf3;
+	font-size: 13px;
+	text-transform: none;
+}
+header ul li ul li a:hover, header ul li ul li a:focus{ text-decoration: underline;}
 #content{
 	width: 940px;
 	margin: 0 auto;
@@ -389,7 +416,7 @@ header .logo{
 	padding: 15px 0 0 15px;
 	background: url(../img/bgh3.jpg) 0 0 no-repeat;
 }
-.form-serv p{
+.form-serv .icontel{
 	width: 158px;
 	height: 35px;
 	float: left;
@@ -398,6 +425,11 @@ header .logo{
 	padding: 15px 0 0 60px;
 	letter-spacing: 1px;
 	background: url(../img/icontel.jpg) 0 0 no-repeat;
+}
+.form-serv .resposta{
+	width: 770px;
+	float: left;
+	padding-top: 15px;
 }
 .form-serv ul{ width: 770px;}
 .form-serv ul li{
@@ -451,10 +483,7 @@ header .logo{
 
 /* CONTATO */
 .bg-cont{ width: 940px; background: url(../img/bgcont.jpg) right 0 no-repeat;}
-.formulario{
-	width: 577px;
-	height: 270px;
-}
+.formulario{ width: 577px; height: 270px;}
 .formulario li{
 	width: 577px;
 	float: left;
@@ -604,7 +633,6 @@ header .logo{
 	color: #122a53;
 }
 .menu-erro li a span{ text-transform: uppercase; color: #227a82;}
-
 
 /* FOOTER */
 .bg-rodape{

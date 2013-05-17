@@ -26,6 +26,7 @@
 
 <?php include "inc/footer.php"; ?>
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/submenu.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

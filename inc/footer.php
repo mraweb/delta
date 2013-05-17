@@ -6,7 +6,7 @@
     <footer role="contentinfo">
         <p class="logo-footer">Delta Prag - <span>Desentupidora e Dedetizadora</span></p>
 
-        <p class="bt-orca"><a href="" title="Solicite Agora seu Orçamento">Solicite Agora seu Orçamento</a></p>
+        <p class="bt-orca"><a href="contato.php" title="Solicite Agora seu Orçamento">Solicite Agora seu Orçamento</a></p>
 
         <nav role="navigation">
             <ul>

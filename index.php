@@ -53,7 +53,7 @@
             </section><!-- FINAL FROTA -->
 
             <section class="dedetizacao">
-                <h2><a href="dedetizacao.php" title="Dedetização" class="link">Dedetização</a></h2>
+                <h2><a href="dedetizacao-e-controle-de-pragas.php" title="Dedetização" class="link">Dedetização</a></h2>
 
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s orem Ipsum.</p>
             </section><!-- FINAL FROTA -->
@@ -85,6 +85,7 @@
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="js/slides.min.jquery.js"></script>
 <script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/submenu.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

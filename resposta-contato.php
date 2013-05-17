@@ -9,15 +9,15 @@ require_once('phpmailer/class.phpmailer.php');
     $phpmail->Port = 587;
         
     $phpmail->IsHTML(true);
-    //$phpmail->From = $_POST["miraEmail"];
-    $phpmail->From = "contato@deltaprag.com.br";
+    $phpmail->From = "envia@deltaprag.com.br";
     $phpmail->FromName = $_POST["nome"];
     
-    $phpmail->AddAddress('teste@deltaprag.com.br', 'Delta Prag');
+    $phpmail->AddAddress('marcelo@ao5.com.br', 'Delta Prag');
     $phpmail->AddReplyTo($_POST["mail"], $_POST["nome"]);
     
-    $phpmail->Subject = "Contato do site Delta Prag - ".$_POST["nome"].;
+    $phpmail->Subject = "Contato do site Delta Prag - ".$_POST["nome"]."";
     
+    $phpmail->Body .= "<strong>IP:</strong> ". $_SERVER["REMOTE_ADDR"]."<br />";
     $phpmail->Body .= "<strong>Nome:</strong> ". $_POST["nome"]."<br />";
     $phpmail->Body .= "<strong>E-mail:</strong> ". $_POST["mail"]."<br />";
     $phpmail->Body .= "<strong>Telefone:</strong> ". $_REQUEST["tel"]."<br />";  
@@ -34,7 +34,6 @@ require_once('phpmailer/class.phpmailer.php');
 <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 <title>Contato Enviado | Delta Prag - Desentupidora e Dedetizadora</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/validationEngine.jquery.css">
 <!--[if ie]>
 	<script type="text/javascript" src="js/html5-ie.js"></script>
 <![endif]-->
@@ -92,7 +91,7 @@ require_once('phpmailer/class.phpmailer.php');
 <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="js/mapa.js"></script>
-<script type="text/javascript" src="js/validacao.js"></script>
+<script type="text/javascript" src="js/submenu.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>

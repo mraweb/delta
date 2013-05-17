@@ -7,18 +7,30 @@
         <?php if($url == "index.php"){ ?>
         <h1><a href="/" title="Delta Prag - Desentupidora e Dedetizadora" class="hidetxt">Delta Prag - Desentupidora e Dedetizadora</a></h1>
         <?php }else{ ?>
-        <p class="logo"><a href="/" title="Delta Prag - Desentupidora e Dedetizadora"><img src="img/delta-prag1.jpg" alt+"Delta Prag - Desentupidora e Dedetizadora" width="200" height="71" /></a></p>
+        <p class="logo"><a href="/" title="Delta Prag - Desentupidora e Dedetizadora"><img src="img/delta-prag1.jpg" alt="Delta Prag - Desentupidora e Dedetizadora" width="200" height="71" /></a></p>
         <?php } ?>
 
         <p class="telefone">(11) 5666-9353</p>
-        
+
         <nav role="navigation">
-            <ul>
+            <ul id="navMenu">
                 <li><a href="/" title="Home" class="bt-home <?php if($url == "index.php"){echo 'ativo1';} ?>">Home</a></li>
+
                 <li><a href="empresa.php" title="Empresa" class="bt-empr <?php if($url == "empresa.php"){echo 'ativo2';} ?>">Empresa</a></li>
-                <li><a href="servicos.php" title="Serviços" class="bt-serv <?php if($url == "servicos.php" or $url == "desentupidora.php" or $url == "dedetizacao-e-controle-de-pragas.php"){echo 'ativo3';} ?>">Serviços</a></li>
+
+                <li>
+                    <a href="servicos.php" title="Serviços" class="bt-serv <?php if($url == "servicos.php" or $url == "desentupidora.php" or $url == "dedetizacao-e-controle-de-pragas.php" or $url == "resposta-servicos-desentupidora.php" or $url == "resposta-servicos-dedetizacao.php"){echo 'ativo3';} ?>">Serviços</a>
+
+                    <ul class="sub">
+                        <li><a href="desentupidora.php" title="Desentupidora">Desentupidora</a></li>
+                        <li><a href="dedetizacao-e-controle-de-pragas.php" title="Dedetização e Controle de Pragas">Dedetização e Controle de Pragas</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="frota.php" title="Frota" class="bt-frot <?php if($url == "frota.php"){echo 'ativo4';} ?>">Frota</a></li>
+
                 <li><a href="informativo.php" title="Informativo" class="bt-info <?php if($url == "informativo.php"){echo 'ativo5';} ?>">Informativo</a></li>
+
                 <li><a href="contato.php" title="Contato" class="bt-cont <?php if($url == "contato.php" or $url == "resposta-contato.php"){echo 'ativo6';} ?>">Contato</a></li>
             </ul>
         </nav>
